@@ -4,8 +4,11 @@ import './App.css';
 function App() {
   return (
     <div>
-      <div className='text'>
-        <h1 className='font'>Sales System</h1>
+      <div className='bg'>
+        <h1 className='text'>Sales System</h1>
+        <div className='box'>
+        <h2 className='text'>Steel Cord</h2>
+      </div>
       </div>
     </div>
     

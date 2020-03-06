@@ -1,19 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
-
 .bg{
-  background-color: white;
-  background-image: linear-gradient( white grey );
+  background-image: linear-gradient(to top, rgb(146, 146, 219),  white);
   height:100vh;
-  background-position:left center;
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-
-font{
-  font-family:'Trade Winds' cursive;
-  src: url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
 }
 
 .text{
   text-align: center;
+}
+
+.box{
+  border: black;
 }
