@@ -1,12 +1,100 @@
 .bg{
-  background-image: linear-gradient(to top, rgb(146, 146, 219),  white);
-  height:100vh;
+  background-image: url('../src/asset/image/two-people-on-mountain-cliff-1647962.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 .text{
   text-align: center;
+  border: black;
+  color: rgb(172, 209, 37);
+  margin-top: 100px;
+}
+
+.header h1{
+  text-align: center;
+  display: block;
+  margin-top: 0;
 }
 
 .box{
-  border: black;
+  margin-top: 250px;
+  width: 400px;
+  height: 250px;
+  background-color: rgb(156, 156, 156);
+  margin-left: 100px;
+  float: left;
+  
+}
+
+  .bg1{
+  background-image: url(../src/asset/image/grey-5-braided-metal-65907.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+  #title{
+    text-align: center;
+    height: 40px;
+    margin-top: 0;
+  }
+
+
+.box1{
+  margin-top: 250px;
+  width: 400px;
+  height: 250px;
+  margin-left: 100px;
+  float: left;
+  background-image: url(../src/asset/image/aerial-view-of-bridge-1211856.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box2{
+  margin-top: 250px;
+  width: 400px;
+  height: 250px;
+  background-color: black;
+  margin-left: 100px;
+  float: left;
+  background-image: url(../src/asset/image/american-flag-on-top-of-bridge-2346925.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button {
+  background-color:#282c34;
+  color: blanchedalmond;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto 5px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  margin-left: 80%;
+}
+
+#btn{
+  margin-top: 100px;
+  
+}
+
+.button:hover{
+  background-color:darkslategrey;
+}
+
+.button:active{
+  background-color: darkslategrey;
+  transform: translateY(4px);
 }

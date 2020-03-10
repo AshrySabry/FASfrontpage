@@ -5,14 +5,25 @@ function App() {
   return (
     <div>
       <div className='bg'>
-        <h1 className='text'>Sales System</h1>
+        <div className='header'>
+          <h1>Sales System</h1>
+          <button className='button' id='btn'>Get Started</button>
+        </div>
         <div className='box'>
-        <h2 className='text'>Steel Cord</h2>
-      </div>
+          <div className='bg1'></div>
+          <div id='title'>
+            <h2>Steel Cord</h2>
+          </div>
+          
+        </div>
+        <div className='box1'>
+          <h2 className='text'>Bead Wire</h2>
+        </div>
+        <div className='box2'>
+          <h2 className='text'>Wire Rope</h2>
+        </div>
       </div>
     </div>
-    
-
   );
 }
 
