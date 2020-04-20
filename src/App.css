@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
+ 
  .bg{
   background-image: url('../src/asset/image/mount.jpg');
   background-position: center;
@@ -21,6 +23,7 @@
   height: 100px;
   display:inline-block;
   margin-left: 45%;
+  font-family: 'Dosis', sans-serif;
 }
 
 .header{
@@ -30,34 +33,37 @@
 }
 
 .box{
-  margin-top: 100px;
-  width: 400px;
+  display:inline-flex;
+  justify-content: space-around;
+  align-content:center;
+  margin-top: 10%;
+  width: 20%;
   height: 400px;
   background-color: rgb(156, 156, 156);
-  margin-left: 6%;
-  float: left;
 }
 
-  #title{
-    text-align: center;
-    height: 40px;
-    margin-top: 0;
-  }
+#title{
+  text-align: center;
+  height: 40px;
+  margin-top: 0;
+}
 
-  .button {
-    background-color:#282c34;
-    color: blanchedalmond;
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 12px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-    font-weight: bolder;
-    margin-left: 34%;
-  }
+.button {
+  background-color:#282c34;
+  color: blanchedalmond;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  font-weight: bolder;
+  margin-left: 34%;
+  font-family: 'Dosis', sans-serif;
+  margin-top: 5%;
+}
 
 .button:hover{
   background-color:darkslategrey;
@@ -90,7 +96,6 @@ img {
   position: relative;
   background: #333;
   width: auto;
-  height: 50vh;
   border-radius: 6px;
   padding: 2rem;
   color: #aaa;
@@ -120,6 +125,7 @@ img {
     font-weight: 800;
     font-size: 20px;
     letter-spacing: 0.01em;
+    font-family: 'Dosis', sans-serif;
   }
   
   .card__content {
@@ -149,4 +155,15 @@ img {
   0% { transform: translate(-.5rem, -.5rem) scale(1.05); opacity: 0; filter: blur(2px); }
   50% { opacity: 1; filter: blur(2px); }
   100% { transform: translateY(0) scale(1.0); opacity: 1; filter: blur(0); }
+}
+
+@media only screen and (max-width: 800px) {
+  .box {
+    margin-left: 25%;
+    margin-bottom: 10%;
+  }
+  .button{
+    margin-top: auto;
+
+  }
 }
