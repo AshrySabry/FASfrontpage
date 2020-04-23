@@ -1,5 +1,6 @@
 import React from 'react';
-import Px from './asset/image/surface.jpg';
+import Px from './asset/image/book.jpg';
+import Icon from './asset/image/elephant.jpg';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -23,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     flexWrap:'wrap',
   },
   root: {
-    maxWidth: 345,
+    width: 345,
   },
   media: {
     height: 140,
@@ -31,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   card: {
     margin: '300px auto',
     [theme.breakpoints.down('1034')] : {
-      margin:'260px 100px 0 100px',
+      margin:'150px 100px 15px 100px',
     },
   },
   title: {
@@ -43,21 +44,30 @@ const useStyles = makeStyles((theme) => ({
     fontFamily:'sans-serif',
     margin:'100px auto',
     fontSize:'50px',
-    fontStyle: 'italic',
+    fontStyle: 'oblique',
+    fontWeight:'bold',
     color:'black',
-    [theme.breakpoints.down('946')] : {
+    [theme.breakpoints.down('1046')] : {
       fontSize:'20px',
+      margin: '10px 50px'
       
     },
   },
   btn: {
     borderRadius:'6px',
-    width: 100,
-    height: 30,
-    margin:'65px 100px',
-    [theme.breakpoints.down('946')] : {
-      marginLeft: '50px',
+    width: 'auto',
+    height: 'auto',
+    margin:'60px 100px',
+    backgroundColor:'brown',
+    [theme.breakpoints.down('1046')] : {
+      margin:'10px 10px',
     },
+  },
+  icon: {
+    backgroundImage: `url(${Icon})`,
+    height:20,
+    width:20,
+    display: 'block',
   }
 }));
 
@@ -67,9 +77,9 @@ export default function LandingPage() {
   return (
     <div className={classes.background}>
         <div className={classes.title} >
-          <p className={classes.text}> Welcome to SEAHQ Kiswire Sales System</p>
+          <p className={classes.text}>Welcome to SEAHQ Kiswire Sales System</p>
           <Button variant="contained" color="primary" className={classes.btn}>
-            Primary
+            Get Started
           </Button>
         </div>
       <div className={classes.card}>
@@ -77,12 +87,12 @@ export default function LandingPage() {
           <CardActionArea>
             <CardMedia
               className={classes.media}
-              image={require ("./asset/image/wire.jpg")}
+              image={require ("./asset/image/rnd.jpg")}
               title="Contemplative Reptile"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
-                Steel Cord
+                Research & Development
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
                 Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
@@ -91,10 +101,7 @@ export default function LandingPage() {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small" color="primary" className="button">
-              Share
-            </Button>
-            <Button size="small" color="primary">
+            <Button size="small" color="primary" href='http://www.kiswire.com/english/index.asp'>
               Learn More
             </Button>
           </CardActions>
@@ -105,12 +112,12 @@ export default function LandingPage() {
         <CardActionArea>
           <CardMedia
             className={classes.media}
-            image={require ("./asset/image/wire.jpg")}
+            image={require ("./asset/image/ong.jpg")}
             title="Contemplative Reptile"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Bead Wire
+              Oil & Gas
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
@@ -119,10 +126,7 @@ export default function LandingPage() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-          <Button size="small" color="primary">
+          <Button size="small" color="primary" href='http://www.kiswire.com/english/index.asp'>
             Learn More
           </Button>
         </CardActions>
@@ -133,12 +137,12 @@ export default function LandingPage() {
         <CardActionArea>
           <CardMedia
             className={classes.media}
-            image={require ("./asset/image/wire.jpg")}
+            image={require ("./asset/image/automotive.png")}
             title="Contemplative Reptile"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Wire Rope
+              Automotive
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
@@ -147,9 +151,6 @@ export default function LandingPage() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
           <Button size="small" color="primary">
             Learn More
           </Button>
