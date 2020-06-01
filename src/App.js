@@ -32,7 +32,10 @@ const useStyles = makeStyles((theme) => ({
   card: {
     margin: '300px auto',
     [theme.breakpoints.down('1034')] : {
-      margin:'150px 100px 15px 100px',
+      margin:'150px 10px 20px 10px',
+    },
+    [theme.breakpoints.down('355')] : {
+      margin:'190px 20px 0px 20px',
     },
   },
   title: {
@@ -48,9 +51,12 @@ const useStyles = makeStyles((theme) => ({
     fontWeight:'bold',
     color:'black',
     [theme.breakpoints.down('1046')] : {
+      fontSize:'30px',
+      margin: '20px 50px 10px 50px'
+    },
+    [theme.breakpoints.down('520')] : {
       fontSize:'20px',
-      margin: '10px 50px'
-      
+      margin: '20px 10px 10px 50px'
     },
   },
   btn: {
@@ -61,6 +67,11 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor:'brown',
     [theme.breakpoints.down('1046')] : {
       margin:'10px 10px',
+    },
+    [theme.breakpoints.down('520')] : {
+      margin:'10px 50px 50px 50px',
+      height: '70px',
+      width: '150px'
     },
   },
   icon: {
